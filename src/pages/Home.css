@@ -51,7 +51,7 @@
   overflow: hidden;
 }
 
-.btn:hover {
+.content .btn:hover {
   background-color: #c4b5fd;
   border: #c4b5fd solid 4px;
 }

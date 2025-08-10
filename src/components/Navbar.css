@@ -51,19 +51,18 @@
   width: 100%;
 }
 
-.btn {
+.navList .btn {
   border: 2px solid white;
   background: transparent;
   color: white;
   padding: 10px 20px;
-  font-size: medium;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
-.btn:hover {
+.navList .btn:hover {
   background-color: #c4b5fd;
-  color: white;
-  border-color: #c4b5fd;
+  border: #c4b5fd solid 2px;
 }
 
 .menu {
@@ -115,7 +114,6 @@
   .navbar {
     padding: 20px 50px;
   }
-  
 
   .navList {
     display: none;
@@ -145,7 +143,7 @@
   .logo {
     font-size: 1.5rem;
   }
-  .btn {
+  .navList .btn {
     width: 50%;
     font-size: 1rem;
   }
