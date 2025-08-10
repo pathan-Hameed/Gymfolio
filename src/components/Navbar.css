@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono:ital,wght@0,100..500;1,100..700&display=swap");
+
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-family: Nunito, sans-serif;
+}
+
+.navList a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+  padding-bottom: 2px;
+}
+
+.navList a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.navList a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #c4b5fd;
+  color: white;
+  border-color: #c4b5fd;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  background-color: black;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  list-style: none;
+}
+
+.mobileMenu a {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+  padding-bottom: 2px;
+}
+
+.mobileMenu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.mobileMenu a:hover::after {
+  width: 100%;
+}
+
+/* Toggle open state */
+.mobileMenu.open {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+  
+
+  .navList {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .mobileMenu {
+    padding-left: 50px;
+  }
+  .mobileMenu a {
+    position: relative;
+  }
+  .mobileMenu a::after {
+    content: "";
+    width: 0;
+    display: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease-in-out;
+  }
+  .mobileMenu a:hover::after {
+    width: 100%;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .btn {
+    width: 50%;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono:ital,wght@0,100..500;1,100..700&display=swap");
+
+.homePage {
+  background-image: url("../assets/fitness-img-2.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  margin: 0;
+}
+
+.content {
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homePage .content {
+  color: #a4a4a4;
+  font-size: 1.2rem;
+}
+
+.heading {
+  color: white;
+  font-family: Nunito;
+  font-size: 6rem;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
+.content p {
+  width: 80%;
+}
+
+.content .btn {
+  position: relative;
+  margin-top: 2rem;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 4px solid white; /* We'll use a pseudo-element instead */
+  border-radius: 0;
+  font-size: 2.2rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: #c4b5fd;
+  border: #c4b5fd solid 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .homePage {
+    height: 100vh;
+  }
+  .content {
+    text-align: left;
+    align-items: flex-start;
+    padding: 0px 50px;
+    height: 100vh;
+  }
+  .heading {
+    font-size: 5rem;
+    width: 100%;
+    text-align: left;
+  }
+  .content p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .content .btn {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+}
