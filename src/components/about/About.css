@@ -1,0 +1,29 @@
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80vh;
+  width: 100%;
+  padding: 50px 100px;
+  background-color: #1a1a1a;
+}
+
+.about-wrapper {
+  background-image: url("../../assets/aboutProfile.jpg");
+  background-position: left;
+  background-attachment: fixed;
+  background-size: contain;
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.about-content {
+    width: 50%;
+    color: #f2f2f2;
+}
+
+.about-content p {
+    width: 100%;
+}

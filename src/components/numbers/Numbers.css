@@ -1,0 +1,44 @@
+.numList {
+    margin: 50px 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.numList li {
+    text-align: center;
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #a4a4a4;
+}
+
+.numList p {
+    font-size: 1.2rem;
+    color: #a4a4a4;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .numList {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px 0;
+        padding: 0 50px;
+        margin: 20px 0;
+    }
+
+    .number {
+        font-size: 2.5rem;
+        color: #f2f2f2;
+    }
+
+    .numList p {
+        font-size: 1rem;
+    }
+    
+}
