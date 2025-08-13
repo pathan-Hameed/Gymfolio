@@ -16,8 +16,17 @@ export default function Home() {
           <button className="btn">Get Started</button>
         </div>
       </div>
-      <Numbers />
-      {/* <About /> */}
+      <Numbers
+        num1="2000+"
+        title1="Happy Clients"
+        num2="800+"
+        title2="Sessions Completed"
+        num3="15+"
+        title3="Years of Experience"
+        num4="10"
+        title4="Expert Trainers"
+      />
+      <About />
     </>
   );
 }

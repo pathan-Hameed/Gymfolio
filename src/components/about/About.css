@@ -1,29 +1,50 @@
 .about-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 80vh;
+  background-image: url("../../assets/aboutProfile.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  padding: 50px 100px;
+  height: auto;
+  border-radius: 20px;
   background-color: #1a1a1a;
 }
 
-.about-wrapper {
-  background-image: url("../../assets/aboutProfile.jpg");
-  background-position: left;
-  background-attachment: fixed;
-  background-size: contain;
-  width: 50%;
-  height: auto;
-  border-radius: 20px;
-}
-
 .about-content {
-    width: 50%;
-    color: #f2f2f2;
+  padding: 50px 50px;
+  color: #f2f2f2;
 }
 
-.about-content p {
+.aboutme {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.about-content .btn {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  width: 30%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    background-image: url("../../assets/mobile/gymProfileMobile.jpg");
+    background-position: center;
+  }
+
+  .aboutme {
+    margin: 1rem 0;
+  }
+
+  .about-content .btn {
     width: 100%;
+    font-size: 1rem;
+  }
+  
 }
