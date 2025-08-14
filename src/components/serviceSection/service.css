@@ -1,0 +1,103 @@
+.serviceSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 50px;
+  background-color: #262626;
+  border-radius: 40px;
+}
+
+.serviceSection h1 {
+  margin-bottom: 2rem;
+  color: #f2f2f2;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: nunito, sans-serif;
+}
+
+.service-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.serviceList {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serviceList .listItems {
+  list-style: none;
+  width: 100%;
+}
+
+.serviceList .listItems a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.listItems a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: #c4b5fd;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.listItems a:hover::after {
+    width: 60%;
+    color: #ae9bfd;
+}
+
+.listItems a:hover {
+    color: #c4b5fd;
+    text-decoration: none;
+}
+
+.serviceList .listItems a li {
+    margin-bottom: 2rem;
+}
+
+.serviceList .btn {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+    width: 80%;
+}
+
+.imageNcontent {
+  padding-left: 3rem;
+  border-left: 4px solid white;
+  width: 50%;
+}
+
+.imageNcontent img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imageNcontent  h2 {
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.imageNcontent  p {
+    width: 100%;
+    color: #f2f2f2ae;
+}

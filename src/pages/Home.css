@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono:ital,wght@0,100..500;1,100..700&display=swap");
 
 .homePage {
-  background-image: url("../assets/fitness-img-2.jpg");
+  background-image: url("../assets/desktop/fitness-img-2.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -54,6 +54,10 @@
 .content .btn:hover {
   background-color: #c4b5fd;
   border: #c4b5fd solid 4px;
+}
+
+.service-section {
+  padding: 100px 100px;
 }
 
 @media screen and (max-width: 768px) {

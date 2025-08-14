@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Numbers from "../components/numbers/Numbers";
 import About from "../components/about/About";
+import Service from "../components/serviceSection/Service";
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
         title4="Expert Trainers"
       />
       <About />
+      <div className="service-section">
+      <Service />
+      </div>
     </>
   );
 }
