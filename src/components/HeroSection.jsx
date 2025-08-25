@@ -4,7 +4,7 @@ import fitness1 from "../assets/fitness1.jpg"; // adjust path if needed
 const HeroSection = () => {
   return (
     <section
-      className="relative w-full h-screen bg-cover bg-center flex items-center justify-center"
+      className="relative w-full h-screen bg-cover bg-center bg-fixed flex items-center justify-center"
       style={{ backgroundImage: `url(${fitness1})` }}
     >
       {/* Overlay */}
@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="relative ml-[30px] mr-[30px] z-10 text-white px-4">
         <h1
           className="
-            text-8xl md:text-7xl   /* bigger on mobile, same on desktop */
+            text-8xl md:text-7xl
             text-left md:text-center
             font-normal leading-tight mb-6
           "
@@ -24,7 +24,7 @@ const HeroSection = () => {
 
         <p
           className="
-            text-2xl md:text-xl     /* bigger font on mobile */
+            text-2xl md:text-xl
             text-left md:text-center
             font-light mb-8
           "
