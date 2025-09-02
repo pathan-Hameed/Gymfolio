@@ -7,3 +7,13 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@keyframes breathing {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.02); opacity: 0.95; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.breathing {
+  animation: breathing 3s ease-in-out infinite;
+}
