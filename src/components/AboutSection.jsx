@@ -26,6 +26,7 @@ export default function CoachCard() {
             <img
               src={coachImg}
               alt="Coach"
+              loading="lazy"
               className="w-50% h-80 object-cover rounded-xl"
             />
           </div>
@@ -36,6 +37,7 @@ export default function CoachCard() {
           <img
             src={coachImg}
             alt="Coach"
+            loading="lazy"
             className="w-full h-80 object-cover rounded-lg mb-8 md:mb-0 md:hidden"
           />
         </div>

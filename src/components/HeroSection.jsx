@@ -30,6 +30,7 @@ export default function HeroSection() {
           <img
             src={profile1}
             lt="Left"
+            loading="lazy"
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
@@ -39,6 +40,7 @@ export default function HeroSection() {
           <img
             src={profile3}
             alt="Top Right"
+            loading="lazy"
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
@@ -48,6 +50,7 @@ export default function HeroSection() {
           <img
             src={profile4}
             alt="Bottom Right"
+            loading="lazy"
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
@@ -62,7 +65,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="absolute top-1/2 left-[100px] w-50 rounded-2xl shadow-xl transform -translate-y-1/2"
         >
-          <img src={profile1} alt="Workout" className="rounded-2xl" />{" "}
+          <img src={profile1} alt="Workout" className="rounded-2xl" loading="lazy"/>{" "}
         </motion.div>
 
         {/* image 2  */}
@@ -72,7 +75,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           className="absolute top-10 right-20 w-45 rounded-2xl shadow-xl"
         >
-          <img src={profile3} alt="Lifting" className=" rounded-2xl" />
+          <img src={profile3} alt="Lifting" className=" rounded-2xl" loading="lazy"/>
         </motion.div>
 
         {/* image 3  */}
@@ -82,7 +85,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           className="absolute bottom-10 right-40 w-45 rounded-2xl shadow-xl"
         >
-          <img src={profile4} alt="Strength" className="rounded-2xl" />
+          <img src={profile4} alt="Strength" className="rounded-2xl" loading="lazy"/>
         </motion.div>
       </div>
     </section>

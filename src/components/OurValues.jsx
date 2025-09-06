@@ -37,7 +37,7 @@ export default function OurValues() {
   ];
 
   return (
-    <section className="bg-white nunito px-6 md:px-[100px] mt-[50px] md:mt-[200px]" id="values">
+    <section className="bg-white nunito px-6 md:px-[100px] mt-[100px] md:mt-[200px]" id="values">
       {/* Main Heading */}
       <h2 className="text-center font-bold nunito text-3xl md:text-5xl mb-12">
         Our Values
@@ -53,7 +53,7 @@ export default function OurValues() {
             }`}
           >
             {/* Text Section */}
-            <div className="md:w-1/2 text-center md:text-left">
+            <div className="rounded-2xl md:border-0 p-8 md:p-0 bg-gray-200 md:bg-white md:rounded-0 md:shadow-0 md:w-1/2 text-center md:text-left">
               <h3 className="text-2xl md:text-4xl font-semibold mb-4 nunito">
                 {val.title}
               </h3>
