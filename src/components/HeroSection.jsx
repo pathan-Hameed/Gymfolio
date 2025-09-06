@@ -8,10 +8,10 @@ export default function HeroSection() {
     <section className="relative w-full min-h-screen flex flex-col md:flex-row items-center justify-center p-[30px] md:my-20 text-left md:text-center nunito">
       {/* Text Section */}
       <div className="max-w-2xl relative z-10 md:flex md:flex-col md:items-center mb-[30px] md:mb-0">
-        <h1 className="text-4xl md:text-8xl text-black text-center">
+        <h1 className="text-4xl md:text-8xl text-black text-center mb-12 nunito">
           Level Up Your Fitness
-        </h1>
-        <p className="mt-[20px] md:mt-[50px] text-gray-700 text-md md:text-xl md:w-3/4">
+        </h1> 
+        <p className="mt-[20px] md:mt-[50px] text-gray-700 text-md md:text-xl md:w-3/4 nunito">
           Achieve your health goals with personalized training plans, real
           results, and expert guidance
         </p>
