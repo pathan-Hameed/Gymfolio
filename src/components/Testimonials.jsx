@@ -82,7 +82,6 @@ export default function Testimonials() {
                 src={testimonialVideo}
                 muted
                 loop
-                preload="none"
                 className="w-full h-full object-cover rounded-xl"
               />
             </div>
