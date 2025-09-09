@@ -39,11 +39,11 @@ const MyServices = () => {
   ];
 
   return (
-    <div className="bg-white p-4 pt-[100px] md:pt-[100px] px-8 sm:px-8 md:px-[100px]">
-      <h1 className="text-center font-bold text-3xl md:text-5xl lg:text-5xl nunito text-black mb-8 sm:mb-12">
+    <div className="bg-white p-4 pt-[100px] md:pt-[100px] px-8 sm:px-8 md:px-[100px] flex flex-col items-start" id="services">
+      <h1 className="self-center font-bold text-3xl md:text-5xl lg:text-5xl nunito text-black mb-8 sm:mb-12">
         My Services
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 md:pt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 md:pt-12 mb-8">
         {services.map((service, index) => (
           <div
             key={index}
@@ -62,6 +62,12 @@ const MyServices = () => {
           </div>
         ))}
       </div>
+      <button
+          className="w-full md:w-2/3 mt-[20px] md:mt-[50px] px-4 py-2 text-sm md:px-8 md:py-3 bg-green-600 text-white font-semibold md:text-lg rounded-full shadow-lg 
+                 hover:bg-green-700 active:scale-95 transition-all duration-300 self-center"
+        >
+          Book a Session
+        </button>
     </div>
   );
 };

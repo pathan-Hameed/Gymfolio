@@ -3,6 +3,7 @@ import AboutSection from '../components/AboutSection'
 import Testimonials from '../components/testimonials'
 import OurValues from '../components/OurValues'
 import MyServices from '../components/MyServices'
+import Connect from '../components/Connect'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Testimonials />
       <OurValues />
       <MyServices />
+      <Connect />
     </>
   )
 }
